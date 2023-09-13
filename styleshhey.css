@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+Body{
+background-color: rgb(124, 211, 211);
+color: black;
+
+width: 100%;
+min-height: 100vh;
+
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+form{
+    width: 350px;
+    height: 450px;
+
+    border: 2px;
+    padding: 20px;
+    margin: 20px;
+
+    border-radius: 20px;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+
+}
+form .product-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-img img{
+    width: 200px;
+    height: 100px;
+
+    border-radius: 20px;
+    margin-bottom: 40px;  
+}
+img:hover{
+    transform: scale(3.8);
+
+}
+.title{
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.title p{
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+
+}
+.title span{
+    color: red;
+}
+.details{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14.5px;
+    margin-top: 20px;
+
+    color: grey;
+}
+.attributes{
+    margin-top: 20px;
+
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;         
+}
+
+.attributes p{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+
+}
+
+.radio{
+    margin-top: 13px;
+
+}
+
+.radio .size{
+   display: flex;
+   margin-left: 30px; 
+   
+   gap: 18px;
+
+}
+
+.size input[type="radio"]{
+    display:none;
+    }
+  
+    .size label{
+        display: block;
+        background: fixed;
+        border: 2px solid gray;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+  
+    .size input[type=radio]:checked +label[for="small"]{
+        border: 3px solid red;
+    }
+    .size input[type=radio]:checked +label[for="medium"]{
+        border: 3px solid #085c6f;
+    }
+    .size input[type=radio]:checked +label[for="large"]{
+        border: 3px solid #036e33;
+    }
+
+
+.radio .color{
+   display: flex;
+   margin-left: 70px;
+
+    gap: 18px;    
+   
+}
+
+  
+.color input[type="radio"]{
+    display: none;
+    }
+  
+    .color label{
+        display: block;
+        background: fixed;
+        border: 2px solid gray;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+  
+    .color input[type=radio]:checked +label[for="red"]{
+        background-color: red;
+
+    }
+    .color input[type=radio]:checked +label[for="blue"]{
+        background-color: blue;
+    }
+    .color input[type=radio]:checked +label[for="green"]{
+        background-color: green;
+    }
+
+    .but-qroup{
+        margin-top: 30px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+    }
+
+    .but-product{
+        width: 100px;
+        height: 35px;
+
+        border: 1px;
+        padding: 3px;
+        margin: 20px;
+        border-radius: 10px;
+    }
+
+    .but-product:nth-child(1){
+        background-color: red;
+    }
+    .but-product:nth-child(2){
+        background-color: rgb(124, 211, 211);
+    }
+
+
+    footer p{
+        margin: 40px;;
+        font-size: 15px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    a:hover{
+        color: red;
+    }
